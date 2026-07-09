@@ -373,7 +373,7 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
             </div>
         </section><!-- End Call To Action Section -->
 
-    <section id="skills">
+<section id="skills">
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -490,9 +490,6 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
                 </div>
                 <div class="skill-item" style="background-color:#000000;" data-aos="fade-up" data-aos-delay="400">
                     <span class="skill">Vercel</span>
-                </div>
-                <div class="skill-item" style="background-color:#339933;" data-aos="fade-up" data-aos-delay="500">
-                    <span class="skill">Node.js</span>
                 </div>
             </div>
 
@@ -1073,6 +1070,183 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
             padding-bottom: 10px; /* Añade un espacio inferior */
         }
     }
+
+    /* ============================================
+   SKILLS SECTION - RESPONSIVE
+   ============================================ */
+
+#skills {
+    padding: 60px 0;
+}
+
+#skills .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#skills .section-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+#skills .section-header p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Categorías */
+.skill-category {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: #333;
+    padding-left: 5px;
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+}
+
+/* Contenedor de skills */
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Item individual */
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: default;
+    min-height: 42px;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item .skill {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (768px)
+   ============================================ */
+@media (max-width: 768px) {
+    #skills {
+        padding: 40px 0;
+    }
+
+    #skills .section-header h3 {
+        font-size: 1.75rem;
+    }
+
+    #skills .section-header p {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+
+    .skill-category {
+        font-size: 1.1rem;
+        margin: 25px 0 12px;
+    }
+
+    .skill-row {
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .skill-item {
+        padding: 8px 14px;
+        min-height: 38px;
+    }
+
+    .skill-item .skill {
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVIL (480px)
+   ============================================ */
+@media (max-width: 480px) {
+    #skills {
+        padding: 30px 0;
+    }
+
+    #skills .section-header {
+        margin-bottom: 25px;
+    }
+
+    #skills .section-header h3 {
+        font-size: 1.5rem;
+    }
+
+    #skills .section-header p {
+        font-size: 0.875rem;
+        padding: 0 10px;
+    }
+
+    .skill-category {
+        font-size: 1rem;
+        margin: 20px 0 10px;
+        padding-left: 10px;
+    }
+
+    .skill-row {
+        gap: 6px;
+        margin-bottom: 12px;
+        justify-content: flex-start;
+    }
+
+    .skill-item {
+        padding: 7px 12px;
+        min-height: 34px;
+        border-radius: 20px;
+    }
+
+    .skill-item .skill {
+        font-size: 0.78rem;
+        letter-spacing: 0.2px;
+    }
+
+    .skill-item:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVIL PEQUEÑO (360px)
+   ============================================ */
+@media (max-width: 360px) {
+    .skill-item {
+        padding: 6px 10px;
+        min-height: 32px;
+    }
+
+    .skill-item .skill {
+        font-size: 0.72rem;
+    }
+
+    .skill-row {
+        gap: 5px;
+    }
+}
 </style>
 
 </body>
